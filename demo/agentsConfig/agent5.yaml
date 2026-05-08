@@ -1,0 +1,16 @@
+modelId: "sentence-transformers/all-MiniLM-L6-v2"
+revision: "main"
+token: ""
+hubBaseUrl: "https://huggingface.co"
+configFile: "config.json"
+timeoutSeconds: 30
+
+buildTime: ""
+releaseTime: ""
+declaredLicense: ""
+suppliedBy: ""
+domains: []
+modelTypes: []
+informationAboutTrainingData: ""
+informationAboutApplication: ""
+limitations: ""

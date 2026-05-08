@@ -1,0 +1,125 @@
+{
+  "@context" : "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph" : [ {
+    "@id" : "_:creationInfo_0",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "SpdxRef:creatorAgent/735595112", "SpdxRef:author/1536264679" ],
+    "created" : "2026-05-08T09:39:48Z"
+  }, {
+    "spdxId" : "SpdxRef:declaredLicense/1415630120",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ {
+      "type" : "simplelicensing_AnyLicenseInfo",
+      "name" : "MIT",
+      "creationInfo" : "_:creationInfo_0"
+    } ],
+    "from" : "SpdxRef:model/82201270",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:declaredLicense/1888833428",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ {
+      "type" : "simplelicensing_AnyLicenseInfo",
+      "name" : "CC0: Public Domain",
+      "creationInfo" : "_:creationInfo_0"
+    } ],
+    "from" : "SpdxRef:dataset/1902269637",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:trainRelationship/690732792",
+    "type" : "Relationship",
+    "relationshipType" : "trainedOn",
+    "to" : [ "SpdxRef:dataset/1902269637" ],
+    "from" : "SpdxRef:model/82201270",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:author/1536264679",
+    "type" : "Agent",
+    "name" : "Demo Author",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:creatorAgent/735595112",
+    "type" : "Agent",
+    "externalIdentifier" : [ {
+      "type" : "ExternalIdentifier",
+      "identifier" : "demo.author@example.org",
+      "externalIdentifierType" : "email"
+    } ],
+    "name" : "Demo Author",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:creatorAgent/583352542",
+    "type" : "Agent",
+    "name" : "Demo MLflow User",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:creatorAgent/1372805557",
+    "type" : "Agent",
+    "name" : "Kaggle Team Bot",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:model/82201270",
+    "type" : "ai_AIPackage",
+    "suppliedBy" : "SpdxRef:creatorAgent/583352542",
+    "ai_limitation" : "Demonstration model only; not intended for production use\n",
+    "ai_informationAboutTraining" : "Trained on the Iris dataset using logistic regression\n",
+    "ai_useSensitivePersonalInformation" : "no",
+    "name" : "aigen_demo_iris",
+    "software_primaryPurpose" : "model",
+    "software_downloadLocation" : "models:/aigen_demo_iris/1",
+    "software_packageVersion" : "1",
+    "ai_hyperparameter" : [ {
+      "type" : "DictionaryEntry",
+      "value" : "random_state",
+      "key" : "42"
+    }, {
+      "type" : "DictionaryEntry",
+      "value" : "max_iter",
+      "key" : "200"
+    }, {
+      "type" : "DictionaryEntry",
+      "value" : "dataset",
+      "key" : "iris"
+    }, {
+      "type" : "DictionaryEntry",
+      "value" : "model_family",
+      "key" : "logistic_regression"
+    } ],
+    "ai_informationAboutApplication" : "Predicts iris species from sepal and petal measurements\n",
+    "releaseTime" : "2026-05-08T07:29:00Z",
+    "ai_typeOfModel" : [ "Logistic Regression classifier\n" ],
+    "ai_metric" : [ {
+      "type" : "DictionaryEntry",
+      "value" : "macro_f1",
+      "key" : "0.9487179487179488"
+    }, {
+      "type" : "DictionaryEntry",
+      "value" : "accuracy",
+      "key" : "0.9473684210526315"
+    } ],
+    "ai_domain" : [ "classification", "tabular data\n" ],
+    "builtTime" : "2026-05-08T07:29:00Z",
+    "ai_standardCompliance" : [ "SPDX 3.0.1\n" ],
+    "ai_modelExplainability" : [ "Coefficient inspection\n" ],
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:dataset/1902269637",
+    "type" : "dataset_DatasetPackage",
+    "dataset_datasetType" : [ "sensor", "other" ],
+    "dataset_dataCollectionProcess" : "```\n[\n  \"Data collection: Analysis of the Iris dataset, utilizing the Fisher's classic 1936 paper and the UCI Machine Learning Repository.\",\n  \"Data processing: The dataset includes 50 samples per species, with properties about each flower.\",\n  \"Feature engineering: The dataset contains columns for species, SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm, and ID.\",\n  \"Data visualization: The Sepal Width vs. Sepal Length visualization was used to infer the data collection process.\"\n]\n```",
+    "dataset_intendedUse" : "- Data analysis and visualization\n- Classification\n- Machine learning\n- Iris flower recognition\n- Model development\n- Research and experimentation",
+    "dataset_anonymizationMethodUsed" : [ "Id,SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm,Species\n1,5.1,3.5,1.4,0.2,Iris-setosa\n2,4.9,3.0,1.4,0.2,Iris-setosa\n3,4.7,3.2,1.3,0.2,Iris-setosa\n4,4.6,3.1,1.5,0.2,Iris-setosa" ],
+    "name" : "iris",
+    "software_primaryPurpose" : "data",
+    "dataset_datasetSize" : 10240,
+    "software_packageVersion" : "2",
+    "software_downloadLocation" : "https://www.kaggle.com/datasets/uciml/iris",
+    "releaseTime" : "2016-09-27T07:38:05Z",
+    "originatedBy" : [ "SpdxRef:creatorAgent/1372805557" ],
+    "builtTime" : "2016-09-27T07:38:05Z",
+    "creationInfo" : "_:creationInfo_0"
+  } ]
+}

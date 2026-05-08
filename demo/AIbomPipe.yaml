@@ -1,0 +1,31 @@
+authors:
+  - name: "Demo Author"
+    email: "demo.author@example.org"
+
+LLMClient: "OllamaClient"
+LLMServer: "http://127.0.0.1:11434"
+LLMModel: "gemma3:1b"
+spdxVersion: "3"
+
+teams:
+  - teamName: "IrisModel"
+    type: "AI"
+    agents:
+      - agentName: "MLFlowAIBuilder"
+        codeName: "agent1"
+        priority: 0
+        goals:
+          - fieldName: "*"
+            priority: 0
+
+  - teamName: "IrisDataset"
+    type: "Dataset"
+    tags:
+      - "train"
+    agents:
+      - agentName: "KaggleDatasetBuilder"
+        codeName: "agent3"
+        priority: 0
+        goals:
+          - fieldName: "*"
+            priority: 0

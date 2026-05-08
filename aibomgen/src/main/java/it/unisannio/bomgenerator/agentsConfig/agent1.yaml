@@ -1,0 +1,8 @@
+
+modelName: "your_registered_model_name"
+modelVersion: "1"
+mlFlowServerIP: "localhost"
+mlFlowServerPort: "5000"
+declaredLicense: ""
+trainingScriptsPath: ""
+applicationDocumentationPath: ""

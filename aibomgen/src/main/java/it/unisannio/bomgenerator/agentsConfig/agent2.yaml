@@ -1,0 +1,9 @@
+userRepoString: "owner/repository"
+branch: "main"
+accessToken: "${GITHUB_TOKEN}"
+
+trainingFiles:
+  - "path/to/training_script.py"
+
+preprocessingFiles: []
+applicationFiles: []

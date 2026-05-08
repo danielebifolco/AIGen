@@ -1,0 +1,9 @@
+Repo,Type,Collection Process,Intended use,Preprocessing,Originated by,DownloadLocation,Licenses
+covid-xray-classification,P,P,P,P,P,P,P
+Nod-to-the-COD,P,P,P,G,P,P,P
+Movie-Recommendation-System,P,P,B,G,P,P,P
+RecycLens,P,G,M,P,P,P,P
+credit-card-fraud-detection,P,G,G,M,G,P,P
+COVID-19-X-Ray-Classification,P,G,G,G,M,P,P
+cat_vs_dog_classifier_Public,P,G,P,P,P,P,P
+AQI_PredictionAnalysis,P,G,L,G,G,P,P

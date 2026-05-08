@@ -1,0 +1,3 @@
+datasetName: "your-dataset-slug"
+userName: "dataset-owner"
+token: "${KAGGLE_TOKEN}"

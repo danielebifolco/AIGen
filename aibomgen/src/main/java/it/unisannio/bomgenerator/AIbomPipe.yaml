@@ -1,0 +1,42 @@
+authors:
+  - name: "Author One"
+    email: "author.one@example.org"
+  - name: "Author Two"
+    email: "author.two@example.org"
+
+LLMClient: "OllamaClient"
+LLMServer: "http://localhost:11434"
+LLMModel: "deepseek-r1"
+spdxVersion: "3"
+
+teams:  
+  - teamName: "ModelTeam" 
+    type: "AI"
+    agents:      
+      - agentName: "MLFlowAIBuilder"
+        codeName: "agent1"
+        priority: 0
+        goals:           
+          - fieldName: "*"
+            priority: 1 
+
+      - agentName: "SpdxV3GitHubAIBuilder"
+        codeName: "agent2"
+        priority: 0
+        goals:
+          - fieldName: "*"
+            priority: 0 
+
+  - teamName: "DatasetPipe"
+    type: "Dataset"  
+    tags:
+      - "test"
+    agents:
+      - agentName: "KaggleDatasetBuilder"
+        codeName: "agent3"
+        priority: 0
+        goals:
+          - fieldName: "*"
+            priority: 0
+
+  

@@ -1,0 +1,56 @@
+{
+  "@context" : "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph" : [ {
+    "@id" : "_:creationInfo_0",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "SpdxRef:creatorAgent/735595112", "SpdxRef:author/1009834040" ],
+    "created" : "2026-05-08T10:43:14Z"
+  }, {
+    "spdxId" : "SpdxRef:declaredLicense/1397559897",
+    "type" : "Relationship",
+    "relationshipType" : "hasDeclaredLicense",
+    "to" : [ {
+      "type" : "simplelicensing_AnyLicenseInfo",
+      "name" : "apache-2.0",
+      "creationInfo" : "_:creationInfo_0"
+    } ],
+    "from" : "SpdxRef:model/775184297",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:author/1009834040",
+    "type" : "Agent",
+    "name" : "Demo Author",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:creatorAgent/735595112",
+    "type" : "Agent",
+    "externalIdentifier" : [ {
+      "type" : "ExternalIdentifier",
+      "identifier" : "demo.author@example.org",
+      "externalIdentifierType" : "email"
+    } ],
+    "name" : "Demo Author",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:creatorAgent/1756537436",
+    "type" : "Agent",
+    "name" : "sentence-transformers",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "SpdxRef:model/775184297",
+    "type" : "ai_AIPackage",
+    "suppliedBy" : "SpdxRef:creatorAgent/1756537436",
+    "ai_informationAboutTraining" : "We use the concatenation from multiple datasets to fine-tune our model. The total number of sentence pairs is above 1 billion sentences. We sampled each dataset given a weighted probability which configuration is detailed in the dataconfig.json file. | Dataset | Paper | Number of training tuples | |--------------------------------------------------------|:----------------------------------------:|:--------------------------:| | https://github.com/PolyAI-LDN/conversational-datasets/tree/master/reddit | https://arxiv.org/abs/1904.06472 | 726,484,430 | | https://github.com/allenai/s2orc Citation pairs (Abstracts) | https://aclanthology.org/2020.acl-main.447/ | 116,288,806 | | https://github.com/afader/oqa#wikianswers-corpus Duplicate question pairs | https://doi.org/10.1145/2623330.2623677 | 77,427,422 | | https://github.com/facebookresearch/PAQ (Question, Answer) pairs | https://arxiv.org/abs/2102.07033 | 64,371,441 | | https://github.com/allenai/s2orc Citation pairs (Titles) | https://aclanthology.org/2020.acl-main.447/ | 52,603,982 | | https://github.com/allenai/s2orc (Title, Abstract) | https://aclanthology.org/2020.acl-main.447/ | 41,769,185 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml (Title, Body) pairs | - | 25,316,456 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml (Title+Body, Answer) pairs | - | 21,396,559 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml (Title, Answer) pairs | - | 21,396,559 | | https://microsoft.github.io/msmarco/ triplets | https://doi.org/10.1145/3404835.3462804 | 9,144,553 | | https://github.com/allenai/gooaq | https://arxiv.org/pdf/2104.08727.pdf | 3,012,496 | | https://www.kaggle.com/soumikrakshit/yahoo-answers-dataset (Title, Answer) | https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html | 1,198,260 | | https://huggingface.co/datasets/codesearchnet | - | 1,151,414 | | https://cocodataset.org/#home Image captions | https://link.springer.com/chapter/10.1007%2F978-3-319-10602-148 | 828,395| | https://github.com/allenai/specter citation triplets | https://doi.org/10.18653/v1/2020.acl-main.207 | 684,100 | | https://www.kaggle.com/soumikrakshit/yahoo-answers-dataset (Question, Answer) | https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html | 681,164 | | https://www.kaggle.com/soumikrakshit/yahoo-answers-dataset (Title, Question) | https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html | 659,896 | | https://huggingface.co/datasets/searchqa | https://arxiv.org/abs/1704.05179 | 582,261 | | https://huggingface.co/datasets/eli5 | https://doi.org/10.18653/v1/p19-1346 | 325,475 | | https://shannon.cs.illinois.edu/DenotationGraph/ | https://transacl.org/ojs/index.php/tacl/article/view/229/33 | 317,695 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml Duplicate questions (titles) | | 304,525 | | AllNLI (https://nlp.stanford.edu/projects/snli/ and https://cims.nyu.edu/~sbowman/multinli/ | https://doi.org/10.18653/v1/d15-1075, https://doi.org/10.18653/v1/n18-1101 | 277,230 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml Duplicate questions (bodies) | | 250,519 | | https://huggingface.co/datasets/flax-sentence-embeddings/stackexchangexml Duplicate questions (titles+bodies) | | 250,460 | | https://github.com/google-research-datasets/sentence-compression | https://www.aclweb.org/anthology/D13-1155/ | 180,000 | | https://github.com/pvl/wikihowpairsdataset | https://arxiv.org/abs/1810.09305 | 128,542 | | https://github.com/chridey/altlex/ | https://aclanthology.org/P16-1135.pdf | 112,696 | | https://quoradata.quora.com/First-Quora-Dataset-Release-Question-Pairs | - | 103,663 | | https://cs.pomona.edu/~dkauchak/simplification/ | https://www.aclweb.org/anthology/P11-2117/ | 102,225 | | https://ai.google.com/research/NaturalQuestions | https://transacl.org/ojs/index.php/tacl/article/view/1455 | 100,231 | | https://rajpurkar.github.io/SQuAD-explorer/ | https://aclanthology.org/P18-2124.pdf | 87,599 | | https://huggingface.co/datasets/triviaqa | - | 73,346 | | Total | | 1,170,060,424 |",
+    "name" : "sentence-transformers/all-MiniLM-L6-v2",
+    "software_primaryPurpose" : "model",
+    "software_packageVersion" : "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "software_downloadLocation" : "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/main",
+    "ai_informationAboutApplication" : "Our model is intended to be used as a sentence and short paragraph encoder. Given an input text, it outputs a vector which captures the semantic information. The sentence vector may be used for information retrieval, clustering or sentence similarity tasks. By default, input text longer than 256 word pieces is truncated.",
+    "releaseTime" : "2025-03-06T13:37:44Z",
+    "ai_typeOfModel" : [ "bert, BertModel, sentence-similarity, sentence-transformers, pytorch, onnx, safetensors, transformers" ],
+    "ai_domain" : [ "sentence-similarity" ],
+    "builtTime" : "2022-03-02T23:29:05Z",
+    "creationInfo" : "_:creationInfo_0"
+  } ]
+}

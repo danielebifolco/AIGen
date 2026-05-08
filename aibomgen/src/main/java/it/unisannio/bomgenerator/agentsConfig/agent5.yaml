@@ -1,0 +1,18 @@
+modelId: "owner/model-name"
+revision: "main"
+token: "${HF_TOKEN}"
+hubBaseUrl: "https://huggingface.co"
+configFile: "config.json"
+timeoutSeconds: 30
+
+# Optional overrides. Leave empty to infer values from Hugging Face metadata
+# and the model card when available.
+buildTime: ""
+releaseTime: ""
+declaredLicense: ""
+suppliedBy: ""
+domains: []
+modelTypes: []
+informationAboutTrainingData: ""
+informationAboutApplication: ""
+limitations: ""

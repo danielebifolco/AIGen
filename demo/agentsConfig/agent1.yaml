@@ -1,0 +1,7 @@
+modelName: "aigen_demo_iris"
+modelVersion: "1"
+mlFlowServerIP: "127.0.0.1"
+mlFlowServerPort: "5000"
+declaredLicense: "MIT"
+trainingScriptsPath: ""
+applicationDocumentationPath: ""

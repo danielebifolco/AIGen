@@ -1,0 +1,9 @@
+Repo,Params,Metrics,Limitations,Training.info,App.info,Model Type,Domain,Explainability,License
+covid-xray-classification,P,P,G,G,P,G,G,G,P
+Nod-to-the-COD,P,P,G,B,P,G,G,G,P
+Movie-Recommendation-System,P,P,G,P,G,G,B,G,P
+RecycLens,P,P,G,P,P,P,P,G,P
+credit-card-fraud-detection,P,P,G,M,M,G,G,G,P
+COVID-19-X-Ray-Classification,P,P,G,M,G,M,P,G,P
+cat_vs_dog_classifier_Public,P,P,P,P,P,P,P,P,P
+AQI_PredictionAnalysis,P,P,G,G,G,G,P,G,P
